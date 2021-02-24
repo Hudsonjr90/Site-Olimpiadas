@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff
+}
+
+h1 {
+    font-size: 38px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 80px 40px 80px;
+    background-image: linear-gradient(-90deg, rgb(70, 12, 12), #aa0c0c);
+    border-bottom: 1px solid black;
+}
+
+header div {
+    margin: auto;
+    margin-left: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.txt-color-red {
+    color: #aa0c0c;
+    width: 100%;
+    text-align: center;
+}
+
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    padding: 30px 80px;
+    background-image: url('img-500.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#inicio div {
+    width: 700px;
+    padding-right: 80px;
+}
+
+#inicio div p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(70, 12, 12);
+}
+
+#inicio div p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(70, 12, 12);
+}
+
+#inicio h1 {
+    color: #aa0c0c;
+    font-family: Arial;
+}
+
+#inicio div button {
+    width: 150px;
+    height: 50px;
+    border-radius: 90px;
+    border: none;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    background: #C14649;
+    color: #fff
+}
+
+#inicio div button:hover {
+    background: rgb(219, 90, 92);
+}
+
+#modalidade {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#modalidade div {
+    width: 100%;
+}
+
+#modalidade div h1 {
+    margin: 10px 0;
+    font-size: 30px;
+    color: #aa0c0c;
+}
+
+#modalidade div p {
+    color: black;
+}
+
+#historia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 650px;
+    background-image: linear-gradient(-90deg, rgb(70, 12, 12), #aa0c0c);
+    padding: 0 30px;
+}
+
+#historia div {
+    text-align: center;
+}
+
+#historia div h1 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-image: linear-gradient(-90deg, rgb(70, 12, 12), #aa0c0c);
+    color: white;
+    font-size: 20px;
+    border-top: 1px solid black;
+}
+
+.txt-color {
+    color: #aa0c0c;
+}
+
+@media (max-width: 1000px) {
+    #inicio {
+        padding: 10px 40px;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+        background-image: url("img-800-500.jpeg");
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 10px;
+    }
+    #modalidade div h1 {
+        font-size: 15px;
+    }
+    header {
+        padding: 40px 40px 40px 40px;
+    }
+    nav ul li {
+        padding: 0 10px;
+        list-style: none;
+        font-size: 10px;
+    }
+    #inicio {
+        padding: 10px 40px;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+        background-image: url("img-800-500.jpeg");
+        background-size: 100%;
+    }
+    #inicio div button {
+        width: 75px;
+        height: 35px;
+        border-radius: 90px;
+        border: none;
+        margin: 20px 0;
+        font-size: 10px;
+        font-weight: 600;
+        background: #C14649;
+        color: #fff
+    }
+    #inicio {
+        padding: 10px 40px;
+    }
+    #inicio div h1 {
+        font-size: 15px;
+        color: black;
+    }
+    #inicio div p {
+        font-size: 10px;
+        color: black;
+    }
+    #inicio div {
+        padding-right: 0px;
+    }
+    #inicio img {
+        display: none;
+    }
+    #modalidade {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        padding: 40px 0;
+    }
+    #historia div {
+        text-align: center;
+    }
+    #historia div h1 {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
